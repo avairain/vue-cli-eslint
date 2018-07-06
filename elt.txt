@@ -1,0 +1,17 @@
+1、下载loader
+    eslint
+    eslint-config-standard
+    eslint-friendly-formatter,
+    eslint-loader
+    eslint-plugin-import
+    eslint-plugin-node
+    eslint-plugin-promise
+    eslint-plugin-standard
+    eslint-plugin-vue
+2、webpack.base.config.js 文件里 module.exports.module.rules 添加 ...(config.dev.useEslint ? [createLintingRule()] : []),
+3、修改  .eslintignore文件
+    /build/
+    /config/
+    /dist/
+    /*.js
+    /test/unit/coverage/
